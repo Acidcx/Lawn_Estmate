@@ -5,18 +5,14 @@ def seed(square_feet):
     return amount
 
 
-# This is the fertilizer per the Canvas Instuctions
+
 def fertilizer(square_feet):
     amount = 3 * square_feet
     amount = round(amount, 1)
     return amount
 
 
-# This is the fertilizer calculation that I found from a google search. I think it was meant
-# for us to calculate fertilizer at "A rate of 3 pounds for every 500 square feet".
-# 9000 pounds of fertilizer for a 3000 sqft area seems a bit excessive.  :D
-# Not to mention, 9000 pounds of fertilzer would cost $36000 at $4/lb,
-# Over 36 times the cost of everything else combined for a 3000 sqft area
+
 def accurate_fertilizer(square_feet):
     amount = 3 * (square_feet / 500)
     amount = round(amount, 1)
